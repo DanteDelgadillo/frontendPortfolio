@@ -41,7 +41,8 @@ class ContactMe extends Component {
         message,
         subject
       })
-      .then(console.log(name));
+      .then(console.log(name))
+      .catch(console.log(err));
   }
   render() {
     return (
