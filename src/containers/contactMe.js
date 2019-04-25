@@ -35,14 +35,14 @@ class ContactMe extends Component {
     const { name, email, subject, message } = this.state.formData;
 
     await axios
-      .post("https://portfoliobackenddante.herokuapp.com/api/form", {
+      .post("/api/form", {
         name,
         email,
         message,
         subject
       })
       .then(console.log(name))
-      .catch(console.log(err));
+      .catch(err => console.error(err));
   }
   render() {
     return (
