@@ -8,6 +8,7 @@ import wolf3 from "./images/wolfhowl.png";
 import NavBar from "./containers/navbar";
 import Paws from "./images/Paws.gif";
 import Paws2 from "./images/paws3.png";
+import ContactMeLinks from "./containers/contactMeLinks";
 
 class App extends Component {
   render() {
@@ -35,7 +36,14 @@ class App extends Component {
         </div>
         <img src={wolf2} className="App-logo2" alt="wolflogo2" id="projects" />
         <img src={wolf3} className="App-logo3" alt="wolflogo3" id="contactMe" />
-        <ContactMe />
+        <center>
+          <h2>Contact Me:</h2>
+        </center>
+        <div className="container">
+          <ContactMe />
+
+          <ContactMeLinks />
+        </div>
       </div>
     );
   }

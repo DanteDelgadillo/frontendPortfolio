@@ -90,21 +90,6 @@
   text-align: center;
 }
 
-/* *********************CONTACT FORM *********************************** */
-
-.banner-text2 {
-  background-color: black;
-  opacity: 0.8;
-  width: 25%;
-  margin: auto;
-  border-radius: 10px;
-
-  padding: 10px;
-}
-.button {
-  float: right;
-  padding: 10px;
-}
 /* **********************paw scroll **************************** */
 
 .pawGif {
@@ -122,4 +107,36 @@
   width: 300px;
   position: fixed;
   visibility: hidden;
+}
+/* ******************************** Contact me page css**************** */
+
+/* *********************CONTACT FORM *********************************** */
+
+.contactme-banner1 {
+  background-color: black;
+  opacity: 0.8;
+  width: 50%;
+  margin-left: -5%;
+  border-radius: 10px;
+}
+.button {
+  float: right;
+  padding: 10px;
+}
+
+.contactme-banner2 {
+  background-color: black;
+  /* opacity: 0.8; */
+  width: 50%;
+
+  /* margin-left: 100%; */
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: -30%;
+  float: right;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
 }

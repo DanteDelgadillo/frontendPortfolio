@@ -35,7 +35,7 @@ class ContactMe extends Component {
     const { name, email, subject, message } = this.state.formData;
 
     await axios
-      .post("/api/form", {
+      .post(" http://localhost:3001/api/form", {
         name,
         email,
         message,
@@ -47,9 +47,9 @@ class ContactMe extends Component {
   render() {
     return (
       <React.Fragment>
-        <form>
+        <form className="">
           <fieldset>
-            <Container className="banner-text2">
+            <Container className="contactme-banner1">
               <h3 style={{ textAlign: "center" }}>Contact Me:</h3>
               <Row className="show-grid">
                 <Col xs={6} md={12}>
