@@ -50,7 +50,6 @@ class ContactMe extends Component {
         <form className="">
           <fieldset>
             <Container className="contactme-banner1">
-              <h3 style={{ textAlign: "center" }}>Contact Me:</h3>
               <Row className="show-grid">
                 <Col xs={6} md={12}>
                   <section>
