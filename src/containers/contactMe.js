@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import axios from "axios";
+import FacebookIcon from "../images/icons8-facebook-96.png";
+import Github from "../images/icons8-github-96.png";
+import Linkedin from "../images/icons8-linkedin-96.png";
+import Gmail from "../images/icons8-gmail-96.png";
 
 class ContactMe extends Component {
   constructor(props) {
@@ -51,7 +55,7 @@ class ContactMe extends Component {
           <fieldset>
             <Container className="contactme-banner1">
               <Row className="show-grid">
-                <Col xs={6} md={12}>
+                <Col>
                   <section>
                     <label>Name:</label>
                     <input
@@ -66,7 +70,7 @@ class ContactMe extends Component {
                 </Col>
               </Row>
               <Row className="show-grid">
-                <Col xs={6} md={12}>
+                <Col>
                   <section>
                     <label>email:</label>
                     <input
@@ -81,7 +85,7 @@ class ContactMe extends Component {
                 </Col>
               </Row>
               <Row className="show-grid">
-                <Col xs={6} md={12}>
+                <Col>
                   <section>
                     <label>Subject:</label>
                     <input
@@ -96,7 +100,7 @@ class ContactMe extends Component {
                 </Col>
               </Row>
               <Row className="show-grid">
-                <Col xs={6} md={12}>
+                <Col>
                   <section>
                     <label>Message:</label>
                     <input
@@ -121,6 +125,24 @@ class ContactMe extends Component {
                   </Button>
                 </Col>
               </Row>
+            </Container>
+            <Container className="contactme-banner2">
+              <h2>
+                <img src={Gmail} alt="gmail" />
+                ddantedelgadillo@gmail.com
+              </h2>
+              <h2>
+                <img src={FacebookIcon} alt="fBook" onClick={this.onClick} />
+                Facebook
+              </h2>
+              <h2>
+                <img src={Github} alt="gitHub" onClick={this.onClick2} />
+                GitHub
+              </h2>
+              <h2>
+                <img src={Linkedin} alt="Linkedin" onClick={this.onClick3} />
+                Linkedin
+              </h2>
             </Container>
           </fieldset>
         </form>

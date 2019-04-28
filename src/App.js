@@ -6,9 +6,9 @@ import wolf from "./images/wolf.png";
 import wolf2 from "./images/wolf2.png";
 import wolf3 from "./images/wolfhowl.png";
 import NavBar from "./containers/navbar";
-import Paws from "./images/Paws.gif";
-import Paws2 from "./images/paws3.png";
-import ContactMeLinks from "./containers/contactMeLinks";
+// import Paws from "./images/Paws.gif";
+// import Paws2 from "./images/paws3.png";
+// import ContactMeLinks from "./containers/contactMeLinks";
 
 class App extends Component {
   render() {
@@ -17,8 +17,8 @@ class App extends Component {
         <NavBar />
         {/* <div className="logo"> */}
         <img src={wolf} className="App-logo" alt="wolflogo" id="home" />
-        <img src={Paws} className="pawGif" alt="pawScroll" />
-        <img src={Paws2} className="Paws2" alt="pawScroll2" />
+        {/* <img src={Paws} className="pawGif" alt="pawScroll" />
+        <img src={Paws2} className="Paws2" alt="pawScroll2" /> */}
         {/* </div> */}
         <div className="box-info">
           <div className="border1">
@@ -42,7 +42,7 @@ class App extends Component {
         <div className="container">
           <ContactMe />
 
-          <ContactMeLinks />
+          {/* <ContactMeLinks /> */}
         </div>
       </div>
     );

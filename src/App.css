@@ -10,9 +10,6 @@
   pointer-events: none;
   margin: 1px auto;
   display: block;
-
-  /* align-items: center;
-  justify-content: center; */
 }
 .App-logo2 {
   height: 30vmin;
@@ -93,7 +90,7 @@
 /* **********************paw scroll **************************** */
 
 .pawGif {
-  margin-left: 85%;
+  margin-left: 87%;
   margin-top: -11%;
   height: 300px;
   width: 300px;
@@ -115,10 +112,11 @@
 .contactme-banner1 {
   background-color: black;
   opacity: 0.8;
-  width: 50%;
-  margin-left: -5%;
+  width: 48%;
+  margin-left: 0%;
   border-radius: 10px;
   padding: 10px;
+  float: left;
 }
 .button {
   float: right;
@@ -128,15 +126,42 @@
 .contactme-banner2 {
   background-color: black;
   /* opacity: 0.8; */
-  width: 65%;
-
+  width: 50%;
   margin-left: 50%;
   border-radius: 10px;
-  padding: 20px;
-  margin-top: -40%;
+  padding: 10px;
+  /* margin-top: -40%; */
 }
 
 .center {
   align-items: center;
   justify-content: center;
+}
+
+.nav-item.nav-link {
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .contactme-banner2 {
+    background-color: black;
+    /* opacity: 0.8; */
+    width: 100%;
+    margin-left: 0%;
+    border-radius: 10px;
+    padding: 10px;
+    /* margin-top: -40%; */
+  }
+}
+
+@media (max-width: 1024px) {
+  .contactme-banner1 {
+    background-color: black;
+    /* opacity: 0.8; */
+    width: 100%;
+    margin-left: auto;
+    border-radius: 10px;
+    padding: 10px;
+    float: none;
+  }
 }

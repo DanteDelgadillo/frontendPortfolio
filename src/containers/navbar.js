@@ -1,10 +1,12 @@
 import React, { Component } from "react";
+// import { url } from "inspector";
+// import Hamburger from "../images/icons8-menu-24.png";
 
 class NavBar extends Component {
   render() {
     return (
       <React.Fragment>
-        <nav className="navbar navbar-expand-lg navbar-light sticky-top">
+        <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
           <button
             className="navbar-toggler"
             type="button"
