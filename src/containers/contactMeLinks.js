@@ -9,12 +9,12 @@ class ContactMeLinks extends Component {
     super(props);
 
     this.state = {};
-    this.onClick = this.onClick.bind(this);
+    this.onClick1 = this.onClick.bind(this);
     this.onClick2 = this.onClick2.bind(this);
     this.onClick3 = this.onClick3.bind(this);
   }
 
-  onClick(e) {
+  onClick1(e) {
     e.preventDefault();
 
     window.location = "https://www.facebook.com/dante.delgadillo";
@@ -41,7 +41,7 @@ class ContactMeLinks extends Component {
             ddantedelgadillo@gmail.com
           </h1>
           <h1>
-            <img src={FacebookIcon} alt="fBook" onClick={this.onClick} />
+            <img src={FacebookIcon} alt="fBook" onClick={this.onClick1} />
             Facebook
           </h1>
           <h1>

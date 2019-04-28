@@ -20,6 +20,9 @@ class ContactMe extends Component {
     };
     this.onChange = this.onChange.bind(this);
     this.onClick = this.onClick.bind(this);
+    this.onClick1 = this.onClick.bind(this);
+    this.onClick2 = this.onClick2.bind(this);
+    this.onClick3 = this.onClick3.bind(this);
   }
 
   onChange = e => {
@@ -47,6 +50,24 @@ class ContactMe extends Component {
       })
       .then(console.log(name))
       .catch(err => console.error(err));
+  }
+
+  onClick1(e) {
+    e.preventDefault();
+
+    window.location = "https://www.facebook.com/dante.delgadillo";
+  }
+
+  onClick2(e) {
+    e.preventDefault();
+
+    window.location = "https://github.com/DanteDelgadillo";
+  }
+
+  onClick3(e) {
+    e.preventDefault();
+
+    window.location = "https://www.linkedin.com/in/dante-delgadillo-70016a165/";
   }
   render() {
     return (
@@ -132,7 +153,7 @@ class ContactMe extends Component {
                 ddantedelgadillo@gmail.com
               </h2>
               <h2>
-                <img src={FacebookIcon} alt="fBook" onClick={this.onClick} />
+                <img src={FacebookIcon} alt="fBook" onClick={this.onClick1} />
                 Facebook
               </h2>
               <h2>
