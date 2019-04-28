@@ -20,7 +20,7 @@ class ContactMe extends Component {
     };
     this.onChange = this.onChange.bind(this);
     this.onClick = this.onClick.bind(this);
-    this.onClick1 = this.onClick.bind(this);
+    this.onClick1 = this.onClick1.bind(this);
     this.onClick2 = this.onClick2.bind(this);
     this.onClick3 = this.onClick3.bind(this);
   }
