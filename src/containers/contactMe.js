@@ -148,22 +148,22 @@ class ContactMe extends Component {
               </Row>
             </Container>
             <Container className="contactme-banner2">
-              <h2>
+              <h4>
                 <img src={Gmail} alt="gmail" />
                 ddantedelgadillo@gmail.com
-              </h2>
-              <h2>
+              </h4>
+              <h4>
                 <img src={FacebookIcon} alt="fBook" onClick={this.onClick1} />
                 Facebook
-              </h2>
-              <h2>
+              </h4>
+              <h4>
                 <img src={Github} alt="gitHub" onClick={this.onClick2} />
                 GitHub
-              </h2>
-              <h2>
+              </h4>
+              <h4>
                 <img src={Linkedin} alt="Linkedin" onClick={this.onClick3} />
                 Linkedin
-              </h2>
+              </h4>
             </Container>
           </fieldset>
         </form>
