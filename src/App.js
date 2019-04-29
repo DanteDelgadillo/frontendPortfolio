@@ -17,17 +17,20 @@ class App extends Component {
         <NavBar />
         {/* <div className="logo"> */}
         <img src={wolf} className="App-logo" alt="wolflogo" id="home" />
+        <center>
+          <div className="myName">Dante Delgadillo</div>
+        </center>
         {/* <img src={Paws} className="pawGif" alt="pawScroll" />
         <img src={Paws2} className="Paws2" alt="pawScroll2" /> */}
         {/* </div> */}
         <div className="box-info">
           <div className="border1">
             <div className="banner-text">
-              <h1>Full Stack Web Developer</h1>
+              <h1 className="font">Full Stack Web Developer</h1>
 
               <hr />
 
-              <p>
+              <p className="font">
                 HTML/CSS | Bootstrap | JavaScript | React | NodeJS | Express |
                 MongoDB
               </p>
@@ -36,11 +39,11 @@ class App extends Component {
         </div>
         <img src={wolf2} className="App-logo2" alt="wolflogo2" id="projects" />
         <center>
-          <h2>Projects:</h2>
+          <h2 className="font">Projects:</h2>
         </center>
         <img src={wolf3} className="App-logo3" alt="wolflogo3" id="contactMe" />
         <center>
-          <h2>Contact Me:</h2>
+          <h2 className="font">Contact Me:</h2>
         </center>
         <div className="container">
           <ContactMe />

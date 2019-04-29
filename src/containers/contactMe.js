@@ -78,7 +78,7 @@ class ContactMe extends Component {
               <Row className="show-grid">
                 <Col>
                   <section>
-                    <label>Name:</label>
+                    <label className="font">Name:</label>
                     <input
                       className="form-control"
                       type="text"
@@ -93,7 +93,7 @@ class ContactMe extends Component {
               <Row className="show-grid">
                 <Col>
                   <section>
-                    <label>email:</label>
+                    <label className="font">email:</label>
                     <input
                       className="form-control"
                       type="email"
@@ -108,7 +108,7 @@ class ContactMe extends Component {
               <Row className="show-grid">
                 <Col>
                   <section>
-                    <label>Subject:</label>
+                    <label className="font">Subject:</label>
                     <input
                       className="form-control"
                       type="text"
@@ -123,7 +123,7 @@ class ContactMe extends Component {
               <Row className="show-grid">
                 <Col>
                   <section>
-                    <label>Message:</label>
+                    <label className="font">Message:</label>
                     <input
                       className="form-control"
                       type="text"
@@ -139,7 +139,7 @@ class ContactMe extends Component {
                 <Col className="button">
                   <Button
                     variant="outline-secondary "
-                    className="button"
+                    className="button font"
                     onClick={this.onClick}
                   >
                     Submit
@@ -148,22 +148,36 @@ class ContactMe extends Component {
               </Row>
             </Container>
             <Container className="contactme-banner2">
-              <h4>
-                <img src={Gmail} alt="gmail" />
-                ddantedelgadillo@gmail.com
-              </h4>
-              <h4>
-                <img src={FacebookIcon} alt="fBook" onClick={this.onClick1} />
-                Facebook
-              </h4>
-              <h4>
-                <img src={Github} alt="gitHub" onClick={this.onClick2} />
-                GitHub
-              </h4>
-              <h4>
-                <img src={Linkedin} alt="Linkedin" onClick={this.onClick3} />
-                Linkedin
-              </h4>
+              <Row>
+                <h4 href="https://github.com/DanteDelgadillo" className="font">
+                  <img src={Gmail} alt="gmail" />
+                  ddantedelgadillo@gmail.com
+                </h4>
+              </Row>
+              <Row>
+                <a
+                  href="https://www.facebook.com/dante.delgadillo"
+                  className="font"
+                >
+                  <img src={FacebookIcon} alt="fBook" />
+                  Facebook
+                </a>
+              </Row>
+              <Row>
+                <a href="https://github.com/DanteDelgadillo" className="font">
+                  <img src={Github} alt="gitHub" />
+                  GitHub
+                </a>
+              </Row>
+              <Row>
+                <a
+                  href="https://www.linkedin.com/in/dante-delgadillo-70016a165/"
+                  className="font"
+                >
+                  <img src={Linkedin} alt="Linkedin" />
+                  Linkedin
+                </a>
+              </Row>
             </Container>
           </fieldset>
         </form>

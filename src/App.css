@@ -111,7 +111,7 @@
 
 .contactme-banner1 {
   background-color: black;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   width: 48%;
   margin-left: 0%;
   border-radius: 10px;
@@ -129,7 +129,7 @@
   width: 50%;
   margin-left: 50%;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
   /* margin-top: -40%; */
 }
 
@@ -141,6 +141,14 @@
 .nav-item.nav-link {
   color: #ffffff;
 }
+.myName {
+  font-family: "Cinzel", serif;
+  font-size: 50px;
+}
+
+.font {
+  font-family: "Cinzel", serif;
+}
 
 @media (max-width: 1024px) {
   .contactme-banner2 {
@@ -149,7 +157,7 @@
     width: 100%;
     margin-left: 0%;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     /* margin-top: -40%; */
   }
 }
