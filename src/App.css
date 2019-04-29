@@ -62,7 +62,6 @@
 }
 
 .banner-text h1 {
-  font-size: 66px;
   font-weight: bold;
   color: white;
 }
@@ -171,5 +170,15 @@
     border-radius: 10px;
     padding: 10px;
     float: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .fontsizechange {
+    font-size: 40px;
+  }
+
+  .fontsizechange2 {
+    font-size: 16px;
   }
 }

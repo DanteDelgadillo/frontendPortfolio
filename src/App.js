@@ -26,7 +26,7 @@ class App extends Component {
         <div className="box-info">
           <div className="border1">
             <div className="banner-text">
-              <h1 className="font">Full Stack Web Developer</h1>
+              <h1 className="font fontsizechange">Full Stack Web Developer</h1>
 
               <hr />
 

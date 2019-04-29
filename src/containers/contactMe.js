@@ -149,7 +149,7 @@ class ContactMe extends Component {
             </Container>
             <Container className="contactme-banner2">
               <Row>
-                <h4 href="https://github.com/DanteDelgadillo" className="font">
+                <h4 className="font fontsizechange2">
                   <img src={Gmail} alt="gmail" />
                   ddantedelgadillo@gmail.com
                 </h4>
