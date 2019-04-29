@@ -64,6 +64,7 @@
 .banner-text h1 {
   font-weight: bold;
   color: white;
+  /* font-size: 65px; */
 }
 
 .banner-text hr {
@@ -147,6 +148,9 @@
 
 .font {
   font-family: "Cinzel", serif;
+}
+a {
+  color: #ffffff;
 }
 
 @media (max-width: 1024px) {
