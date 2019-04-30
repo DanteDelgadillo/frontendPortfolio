@@ -153,6 +153,24 @@ a {
   color: #ffffff;
 }
 
+/***********************project page ********************** */
+/* .wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 4px;
+} */
+
+.cell {
+  border: 1px solid lightblue;
+  background-color: black;
+  padding: 10px;
+  width: 35%;
+  border-radius: 10px;
+}
+.dogImg {
+  width: 20%;
+}
+
 @media (max-width: 1024px) {
   .contactme-banner2 {
     background-color: black;

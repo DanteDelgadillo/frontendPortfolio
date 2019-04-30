@@ -20,9 +20,6 @@ class ContactMe extends Component {
     };
     this.onChange = this.onChange.bind(this);
     this.onClick = this.onClick.bind(this);
-    this.onClick1 = this.onClick1.bind(this);
-    this.onClick2 = this.onClick2.bind(this);
-    this.onClick3 = this.onClick3.bind(this);
   }
 
   onChange = e => {
@@ -42,7 +39,7 @@ class ContactMe extends Component {
     const { name, email, subject, message } = this.state.formData;
 
     await axios
-      .post(" http://localhost:3001/api/form", {
+      .post(`${process.env.REACT_APP_API_URL}/api/form`, {
         name,
         email,
         message,
@@ -52,23 +49,6 @@ class ContactMe extends Component {
       .catch(err => console.error(err));
   }
 
-  onClick1(e) {
-    e.preventDefault();
-
-    window.location = "https://www.facebook.com/dante.delgadillo";
-  }
-
-  onClick2(e) {
-    e.preventDefault();
-
-    window.location = "https://github.com/DanteDelgadillo";
-  }
-
-  onClick3(e) {
-    e.preventDefault();
-
-    window.location = "https://www.linkedin.com/in/dante-delgadillo-70016a165/";
-  }
   render() {
     return (
       <React.Fragment>
