@@ -5,6 +5,7 @@ import FacebookIcon from "../images/icons8-facebook-96.png";
 import Github from "../images/icons8-github-96.png";
 import Linkedin from "../images/icons8-linkedin-96.png";
 import Gmail from "../images/icons8-gmail-96.png";
+import Swal from "sweetalert2";
 
 class ContactMe extends Component {
   constructor(props) {
@@ -45,14 +46,27 @@ class ContactMe extends Component {
         message,
         subject
       })
-      .then(console.log(name))
+
+      .then(Swal.fire("Message sended!", "", "success"))
+      .then(
+        this.setState(state => ({
+          ...state,
+          formData: {
+            ...state.formData,
+            name: "",
+            email: "",
+            message: "",
+            subject: ""
+          }
+        }))
+      )
       .catch(err => console.error(err));
   }
 
   render() {
     return (
       <React.Fragment>
-        <form className="">
+        <form>
           <fieldset>
             <Container className="contactme-banner1">
               <Row className="show-grid">
