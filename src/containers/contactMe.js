@@ -12,6 +12,10 @@ class ContactMe extends Component {
     super(props);
 
     this.state = {
+      nameError: "",
+      emailError: "",
+      subjectError: "",
+      messageError: "",
       formData: {
         name: "",
         email: "",
@@ -35,32 +39,73 @@ class ContactMe extends Component {
     }, this.validateForm);
   };
 
+  validate = () => {
+    let nameError = "";
+    let emailError = "";
+    let subjectError = "";
+    let messageError = "";
+
+    if (!this.state.formData.name) {
+      nameError = "Field is Empty";
+    }
+
+    if (!this.state.formData.subject) {
+      subjectError = "Field is Empty";
+    }
+
+    if (!this.state.formData.message) {
+      messageError = "Field is Empty";
+    }
+
+    if (!this.state.formData.email.includes("@")) {
+      emailError = "Invalid Email";
+    }
+
+    if (emailError || nameError || messageError || subjectError) {
+      this.setState({ emailError, nameError, messageError, subjectError });
+      return false;
+    }
+    return true;
+  };
+
   async onClick(e) {
     e.preventDefault();
-    const { name, email, subject, message } = this.state.formData;
+    const isValid = this.validate();
+    if (isValid) {
+      const { name, email, subject, message } = this.state.formData;
 
-    await axios
-      .post(`${process.env.REACT_APP_API_URL}/api/form`, {
-        name,
-        email,
-        message,
-        subject
-      })
+      await axios
+        .post(`${process.env.REACT_APP_API_URL}/api/form`, {
+          name,
+          email,
+          message,
+          subject
+        })
 
-      .then(
-        Swal.fire("Message sended!", "", "success"),
-        this.setState(state => ({
-          ...state,
-          formData: {
-            ...state.formData,
-            name: "",
-            email: "",
-            message: "",
-            subject: ""
-          }
-        }))
-      )
-      .catch(err => console.error(err));
+        .then(
+          Swal.fire("Message sended!", "", "success"),
+          this.setState(state => ({
+            ...state,
+            formData: {
+              ...state.formData,
+              name: "",
+              email: "",
+              message: "",
+              subject: ""
+            }
+          }))
+        )
+        .then(
+          this.setState(state => ({
+            ...state,
+            nameError: "",
+            emailError: "",
+            messageError: "",
+            subjectError: ""
+          }))
+        )
+        .catch(err => console.error(err));
+    }
   }
 
   render() {
@@ -81,6 +126,9 @@ class ContactMe extends Component {
                       value={this.state.formData.name}
                       onChange={this.onChange}
                     />
+                    <div style={{ fontSize: 12, color: "red" }}>
+                      {this.state.nameError}
+                    </div>
                   </section>
                 </Col>
               </Row>
@@ -96,6 +144,9 @@ class ContactMe extends Component {
                       value={this.state.formData.email}
                       onChange={this.onChange}
                     />
+                    <div style={{ fontSize: 12, color: "red" }}>
+                      {this.state.emailError}
+                    </div>
                   </section>
                 </Col>
               </Row>
@@ -111,6 +162,9 @@ class ContactMe extends Component {
                       value={this.state.formData.subject}
                       onChange={this.onChange}
                     />
+                    <div style={{ fontSize: 12, color: "red" }}>
+                      {this.state.subjectError}
+                    </div>
                   </section>
                 </Col>
               </Row>
@@ -126,6 +180,9 @@ class ContactMe extends Component {
                       value={this.state.formData.message}
                       onChange={this.onChange}
                     />
+                    <div style={{ fontSize: 12, color: "red" }}>
+                      {this.state.messageError}
+                    </div>
                   </section>
                 </Col>
               </Row>
