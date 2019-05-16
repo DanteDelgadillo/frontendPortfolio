@@ -83,7 +83,7 @@ class ContactMe extends Component {
         })
 
         .then(
-          Swal.fire("Message sended!", "", "success"),
+          Swal.fire("Message sent!", "", "success"),
           this.setState(state => ({
             ...state,
             formData: {

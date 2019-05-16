@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import wolf from "../images/wolf.png";
+import TodoApp from "../images/todosite.png";
 // import Grid from "react-css-grid";
 import { Container, Row, Col } from "react-bootstrap";
 
@@ -11,36 +11,26 @@ class Projects extends Component {
 
         <Container>
           <Row>
-            <Col xs={5} md={{ span: 5, offset: 1 }}>
-              <div className="cell">
-                <center>
-                  <img className="dogImg" src={wolf} alt="pic" />
-                  <h2>project1</h2>
-                  <p>
-                    <span>
-                      <em>project type</em>
-                    </span>
-                  </p>
-                </center>
-              </div>
+            <Col >
+              <center>
+                <div className="post">
+
+
+                  <img className="dogImg " src={TodoApp} alt="pic" />
+
+                  <a href="https://stickytodolist.netlify.com" target="_blank" rel="noopener noreferrer" >
+                    <div className="animtion1">
+
+                      <h2 className="font">To do App</h2>
+
+                    </div>
+                  </a>
+                </div>
+              </center>
             </Col>
-            <Col xs={5}>
-              <div className="cell">
-                <center>
-                  <img className="dogImg" src={wolf} alt="pic" />
-                  <h2>project2</h2>
-                  <p>
-                    <span>
-                      <em>project type</em>
-                    </span>
-                  </p>
-                </center>
-              </div>
-            </Col>
-            {/* </Grid> */}
           </Row>
         </Container>
-      </React.Fragment>
+      </React.Fragment >
     );
   }
 }
