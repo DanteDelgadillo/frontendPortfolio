@@ -156,13 +156,23 @@ a {
 }
 
 /***********************project page ********************** */
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 70%;
+  margin: auto;
+ 
 
+
+}
 
 .post {
   width: 400px;
   height:400px;
   position: relative;
   cursor: pointer;
+  margin: 10px;
 
 }
 .post:hover .animtion1{
