@@ -36,9 +36,9 @@ class App extends Component {
           </div>
         </div>
         <img src={wolf2} className="App-logo2" alt="wolflogo2" id="projects" />
-        <center>
-          <h2 className="font">Projects:</h2>
-        </center>
+
+        <h2 className="font" >Projects:</h2>
+
         <Projects />
 
         <img src={wolf3} className="App-logo3" alt="wolflogo3" id="contactMe" />
@@ -46,7 +46,9 @@ class App extends Component {
           <h2 className="font">Contact Me:</h2>
         </center>
         <div className="container">
-          <ContactMe />
+          <center>
+            <ContactMe />
+          </center>
         </div>
       </div>
     );

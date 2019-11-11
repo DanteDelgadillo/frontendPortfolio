@@ -4,7 +4,6 @@ import axios from "axios";
 import FacebookIcon from "../images/icons8-facebook-96.png";
 import Github from "../images/icons8-github-96.png";
 import Linkedin from "../images/icons8-linkedin-96.png";
-import Gmail from "../images/icons8-gmail-96.png";
 import Swal from "sweetalert2";
 
 class ContactMe extends Component {
@@ -199,12 +198,6 @@ class ContactMe extends Component {
               </Row>
             </Container>
             <Container className="contactme-banner2">
-              <Row>
-                <h4 className="font fontsizechange2">
-                  <img src={Gmail} alt="gmail" />
-                  ddantedelgadillo@gmail.com
-                </h4>
-              </Row>
               <Row>
                 <a
                   href="https://www.facebook.com/dante.delgadillo"
