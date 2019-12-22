@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TodoApp from "../images/todosite.png";
-import ImageManager from "../images/Untitled.png"
+import ImageManager from "../images/Untitled.png";
+import coral from "../images/coral.png"
 // import Grid from "react-css-grid";
 // import { Container, Row, Col } from "react-bootstrap";
 
@@ -11,10 +12,10 @@ class Projects extends Component {
         <div className="flex-container">
           {/* start */}
           <div className="post">
-            <img className="dogImg " src={TodoApp} alt="pic" />
-            <a href="https://stickytodolist.netlify.com" target="_blank" rel="noopener noreferrer" >
+            <img className="dogImg " src={coral} alt="pic" />
+            <a href="https://deepblueaquariumburbank.netlify.com/" target="_blank" rel="noopener noreferrer" >
               <div className="animtion1">
-                <h2 className="font">To do App</h2>
+                <h2 className="font">Deep Blue Aquarium ecommerce </h2>
               </div>
             </a>
           </div>
@@ -30,14 +31,14 @@ class Projects extends Component {
           </div>
           {/* end */}
           {/* start */}
-          {/* <div className="post">
+          <div className="post">
             <img className="dogImg " src={TodoApp} alt="pic" />
             <a href="https://stickytodolist.netlify.com" target="_blank" rel="noopener noreferrer" >
               <div className="animtion1">
                 <h2 className="font">To do App</h2>
               </div>
             </a>
-          </div> */}
+          </div>
           {/* end */}
         </div>
       </React.Fragment >

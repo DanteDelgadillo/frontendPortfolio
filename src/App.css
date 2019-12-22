@@ -162,7 +162,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  width: 45%;
+  width: 60%;
   margin: 0 auto;
 
  
@@ -172,7 +172,7 @@ a {
 
 .post {
   width: 400px;
-  height:400px;
+  height:250px;
   position: relative;
   cursor: pointer;
   margin: 10px;
