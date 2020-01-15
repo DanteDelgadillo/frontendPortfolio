@@ -1,18 +1,19 @@
 import React, { Component } from "react";
 import ContactMe from "./containers/contactMe";
 
+
 import "./App.css";
 import wolf from "./images/wolf.png";
 import wolf2 from "./images/wolf2.png";
 import wolf3 from "./images/wolfhowl.png";
-import NavBar from "./containers/navbar";
+// import NavBar from "./containers/navbar";
 import Projects from "./containers/project";
 
 class App extends Component {
   render() {
     return (
       <div className="App-header">
-        <NavBar />
+        {/* <NavBar /> */}
         {/* <div className="logo"> */}
         <img src={wolf} className="App-logo" alt="wolflogo" id="home" />
         <center>
@@ -36,8 +37,10 @@ class App extends Component {
           </div>
         </div>
         <img src={wolf2} className="App-logo2" alt="wolflogo2" id="projects" />
+        <center>
+          <h2 className="font" >Projects:</h2>
 
-        <h2 className="font" >Projects:</h2>
+        </center>
 
         <Projects />
 
@@ -48,6 +51,7 @@ class App extends Component {
         <div className="container">
           <center>
             <ContactMe />
+
           </center>
         </div>
       </div>

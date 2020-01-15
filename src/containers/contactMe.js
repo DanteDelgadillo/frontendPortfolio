@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import axios from "axios";
-import FacebookIcon from "../images/icons8-facebook-96.png";
 import Github from "../images/icons8-github-96.png";
 import Linkedin from "../images/icons8-linkedin-96.png";
 import Swal from "sweetalert2";
@@ -198,30 +197,23 @@ class ContactMe extends Component {
               </Row>
             </Container>
             <Container className="contactme-banner2">
-              <Row>
-                <a
-                  href="https://www.facebook.com/dante.delgadillo"
-                  className="font"
-                >
-                  <img src={FacebookIcon} alt="fBook" />
-                  Facebook
+              <div className="linkcss">
+                <Row>
+                  <a href="https://github.com/DanteDelgadillo" className="font">
+                    <img src={Github} alt="gitHub" />
+                    GitHub
                 </a>
-              </Row>
-              <Row>
-                <a href="https://github.com/DanteDelgadillo" className="font">
-                  <img src={Github} alt="gitHub" />
-                  GitHub
+                </Row>
+                <Row>
+                  <a
+                    href="https://www.linkedin.com/in/dante-delgadillo-70016a165/"
+                    className="font"
+                  >
+                    <img src={Linkedin} alt="Linkedin" />
+                    Linkedin
                 </a>
-              </Row>
-              <Row>
-                <a
-                  href="https://www.linkedin.com/in/dante-delgadillo-70016a165/"
-                  className="font"
-                >
-                  <img src={Linkedin} alt="Linkedin" />
-                  Linkedin
-                </a>
-              </Row>
+                </Row>
+              </div>
             </Container>
           </fieldset>
         </form>
