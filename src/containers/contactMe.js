@@ -188,7 +188,7 @@ class ContactMe extends Component {
                 <Col className="button">
                   <Button
                     variant="outline-secondary "
-                    className="button font"
+                    className="button  btn-md"
                     onClick={this.onClick}
                   >
                     Submit
