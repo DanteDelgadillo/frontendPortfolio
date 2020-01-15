@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import TodoApp from "../images/todosite.png";
 import ImageManager from "../images/Untitled.png";
 import coral from "../images/coral.png"
+import WeatherApp from "../images/weatherApp.png";
 // import Grid from "react-css-grid";
 // import { Container, Row, Col } from "react-bootstrap";
 
@@ -10,6 +11,21 @@ class Projects extends Component {
     return (
       <React.Fragment>
         <div className="flex-container">
+          {/* start */}
+          <div className="post">
+            <img className="dogImg " src={WeatherApp} alt="pic" />
+            <a href="https://weathertempchecker.netlify.com/" target="_blank" rel="noopener noreferrer" >
+              <div className="animtion1">
+                <ul>
+                  <li className="font">WeatherApp</li>
+                  <li className="projectP">
+                    Weather application is build with frontend react,express,sweetalert2. So we are able to get Weather info because we senta get request to "https://openweathermap.org/api" and with the response we setdata to manipulate DOM.
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          {/* end */}
           {/* start */}
           <div className="post">
             <img className="dogImg " src={coral} alt="pic" />
