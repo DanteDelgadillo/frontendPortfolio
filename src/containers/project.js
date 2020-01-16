@@ -19,7 +19,7 @@ class Projects extends Component {
                 <ul>
                   <li className="font">WeatherApp</li>
                   <li className="projectP">
-                    Weather application is build with frontend react,express,sweetalert2. So we are able to get Weather info because we senta get request to "https://openweathermap.org/api" and with the response we setdata to manipulate DOM.
+                    Weather application is build with frontend react, axios, sweetalert2. So we are able to get Weather data because we sent a get request , and with the response we are able to get the Data for the weather for searched loaction  .
                   </li>
                 </ul>
               </div>
@@ -51,7 +51,7 @@ class Projects extends Component {
                 <ul>
                   <li className="font">Image Management</li>
                   <li className="projectP">Image Management is an application to save images and able to display data with, api call to same image Management system.
-                  React , and axios for the frontend. node, express, clodinary and mongodb for the backend.
+                  React , and axios for the Frontend. For the Backend node, express, clodinary and mongodb .
                   </li>
                 </ul>
               </div>
