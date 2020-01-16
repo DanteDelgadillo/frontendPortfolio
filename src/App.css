@@ -164,6 +164,7 @@
   text-align: center;
   font-size: 30px;
   font-weight: 500;
+  text-align: center;
   
 }
 
@@ -171,7 +172,7 @@
   .font {
     font-family: 'Roboto Condensed', sans-serif;
     list-style-type:none;
-    text-align: center;
+    
     font-size: 20px;
     font-weight: 500;
   }
@@ -180,8 +181,15 @@
 .projectP{
   font-size: 17px;
   list-style-type:none;
-  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+ text-align: center;
+  
 
+}
+
+ul{
+  padding-inline-start: 0px !important;
 }
 
 @media (max-width: 1024px) {
@@ -234,18 +242,25 @@ a {
 
 
 .animtion1{
+  height: 300px !important;
   width: 0px;
-  height: 250px;
   background: rgba(0, 0, 0, 0.83);
   position: absolute;
   top:0;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   overflow: hidden;
   border-radius: 10px;
   transition: 0.7s ease;
 }
+
+@media (max-width: 1024px) {
+  .animtion1 {
+    height: 250px !important;
+  }
+}
+
 
 /* ***************media************* */
 
