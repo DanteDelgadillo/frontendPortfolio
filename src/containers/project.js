@@ -19,7 +19,7 @@ class Projects extends Component {
                 <ul>
                   <li className="font">WeatherApp</li>
                   <li className="projectP">
-                    Weather application is build with frontend react, axios, sweetalert2. So we are able to get Weather data because we sent a get request , and with the response we are able to get the Data for the weather for searched loaction  .
+                    Weather application is build with frontend react, axios, and sweetalert2. So we are able to get Weather data because we sent a get request , and with the response we are able to get the Data for the weather for searched loaction  .
                   </li>
                 </ul>
               </div>
