@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import ContactMe from "./containers/contactMe";
+
+import ContactMe from "./containers/contactMe2";
 
 
 import "./App.css";
@@ -51,7 +52,6 @@ class App extends Component {
         <div className="container">
           <center>
             <ContactMe />
-
           </center>
         </div>
       </div>
