@@ -230,61 +230,26 @@ a {
 }
 
 /***********************project page ********************** */
-.flex-container{
+.project-container {
+
   display: flex;
   flex-wrap: wrap;
-  align-content: space-between;
-  
-  margin: 0 auto;
+  margin: 5% auto 0;
+  width: 85%;
   justify-content: center;
-
- 
-
-
+  color: black;
 }
 
-.post {
-  width: 500px;
-  height:300px;
-  position: relative;
-  cursor: pointer;
+.project-container > div {
+  background-color: #f1f1f1;
+  width: 450px;
   margin: 10px;
-
-  
-
-}
-.post:hover .animtion1{
-  width: 500px;
-  height:250px;
+  text-align: center;
+  font-size: 17px;
 }
 
-.post img {
-  display: block;
-  width: 500px;
-  height: 300px;
-  border-radius: 10px;
-}
-
-
-
-.animtion1{
-  height: 300px !important;
-  width: 0px;
-  background: rgba(0, 0, 0, 0.83);
-  position: absolute;
-  top:0;
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  overflow: hidden;
-  border-radius: 10px;
-  transition: 0.7s ease;
-}
-
-@media (max-width: 1024px) {
-  .animtion1 {
-    height: 250px !important;
-  }
+.project-img{
+  height: 300px
 }
 
 
@@ -364,3 +329,5 @@ a {
   margin: 0 auto;
   }
 }
+/* ***************test */
+
