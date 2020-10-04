@@ -5,8 +5,7 @@ import coral from "../images/coral.png"
 import WeatherApp from "../images/weatherApp.png";
 import SuperT from "../images/superTorta.png";
 import Netflex from "../images/Capture (3).PNG"
-// import Grid from "react-css-grid";
-// import { Container, Row, Col } from "react-bootstrap";
+import GlxyD from "../images/Capture (2).PNG"
 
 class Projects extends Component {
   render() {
@@ -14,6 +13,16 @@ class Projects extends Component {
       <React.Fragment>
 
         <div className="project-container">
+          {/* start */}
+          <div class="card shadow" >
+            <img src={GlxyD} class="card-img-top project-img" alt="..." />
+            <div class="card-body text-center">
+              <h3 class="card-title">Glxydesign ecommerce</h3>
+              <p class="card-text">Responsive ecommerce site using MERN stack. The site has both admin and user account system. Built-in product management system for the admin. Created an ordering system and access to purchase history for the user. Created a payment system using Braintree. </p>
+              <a href="https://glxydesign.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" >Project Site</a>
+            </div>
+          </div>
+          {/* end */}
           {/* start */}
           <div class="card shadow" >
             <img src={Netflex} class="card-img-top project-img" alt="..." />
